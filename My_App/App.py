@@ -59,7 +59,6 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 self.msg.exec_()
                 self.reset()
             elif self.result() == 'draw':
-                print('Hello')
                 self.msg.setWindowTitle("Result's")
                 self.msg.setText('DRAW')
                 self.msg.setIcon(QMessageBox.Information)

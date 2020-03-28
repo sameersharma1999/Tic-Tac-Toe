@@ -44,8 +44,6 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def game(self, push_button, turn, value):
         if self.check_availability(push_button, turn, value):
-            print(self.main_board)
-            print(self.turn)
             if self.result() == 'win':
                 if self.turn == 'X':
                     self.x_win_count += 1
